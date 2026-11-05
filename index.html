@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wdd 231</title>
+    <meta name="description" content="Divine Kalu's WDD 231 course homepage, featuring an introduction, student photo, and Web and Computer Programming certificate courses.">
+    <meta name="author" content="Divine Kalu">
+    <meta name="theme-color" content="#17243a">
+    <title>Home | Divine Kalu | WDD 231</title>
+
+    <link rel="icon" href="images/logoimage.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>wdd 231 Divine</h1>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Divine Kalu home">
+            <img src="images/logoimage.svg" alt="" width="42" height="42">
+            <span>Divine Kalu</span>
+        </a>
+
+        <button class="menu-button" id="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <div class="page-heading">
+            <p class="eyebrow">WDD 231 · Web Frontend Development I</p>
+            <h1>Home</h1>
+        </div>
+
+        <div class="intro-grid">
+            <section class="panel about-panel" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                <div class="panel-content">
+                    <p>
+                        Hello! My name is Divine Kalu, and I am a software development
+                        student from Nigeria. I enjoy learning how websites and
+                        applications are designed and built. I am currently developing
+                        my skills in HTML, CSS, and JavaScript, and I look forward to
+                        creating useful, accessible web experiences.
+                    </p>
+                    <p>
+                        Outside my studies, I enjoy digital illustration, creative
+                        design, and exploring technology.
+                    </p>
+                </div>
+            </section>
+
+            <section class="panel photo-panel" aria-labelledby="photo-heading">
+                <h2 id="photo-heading">Student Photo</h2>
+                <div class="photo-frame">
+                    <img src="images/profile-image.jpg" alt="Portrait of Divine Kalu"
+                        width="480" height="600">
+                </div>
+            </section>
+        </div>
+
+        <section class="panel certificate-panel" aria-labelledby="certificate-heading">
+            <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
+
+            <div class="course-controls" aria-label="Filter courses">
+                <button class="filter-button active" type="button" data-filter="ALL"
+                    aria-pressed="true">All Courses</button>
+                <button class="filter-button" type="button" data-filter="WDD"
+                    aria-pressed="false">WDD Courses</button>
+                <button class="filter-button" type="button" data-filter="CSE"
+                    aria-pressed="false">CSE Courses</button>
+            </div>
+
+            <p class="credit-summary" id="credit-summary" aria-live="polite">
+                Credits displayed: 0
+            </p>
+
+            <div class="course-grid" id="course-list" aria-live="polite">
+                <p class="loading-message">Loading courses…</p>
+            </div>
+            <p class="course-note">
+                Completed courses are highlighted. Course completion should reflect
+                your own academic record.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com/Divon-git" target="_blank"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/github.svg" alt="" width="26" height="26">
+            </a>
+            <a href="https://www.linkedin.com/in/divine-kalu-827a5926b/"
+                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="" width="26" height="26">
+            </a>
+        </div>
+
+        <p class="copyright">
+            © <span id="currentyear"></span> Divine Kalu · Nigeria
+        </p>
+        <p class="modified">Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
