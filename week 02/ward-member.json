@@ -1,0 +1,23 @@
+
+{
+"familyName": "boju",
+"movedIn": "2026-3-06",
+"number_of_people_in_fam": "5",
+"visited": false,
+
+"members": [{
+    "name": "chi",
+    "gender": "male",
+    "birthDate": "26-07-2000"
+},
+{
+    "name": "chidi",
+    "gender": "female",
+    "birthDate": "12-08-2013"
+},
+{
+   "name": "ada",
+    "gender": "female",
+    "birthDate": "01-08-1997" 
+}]
+}

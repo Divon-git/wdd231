@@ -8,15 +8,16 @@
     <meta name="theme-color" content="#17243a">
     <title>Home | Divine Kalu | WDD 231</title>
 
-    <meta property="og:title" content="Web homepage Wdd 231" />
-    <meta property="og:description" content="Divine Kalu's WDD 231 course homepage, featuring an introduction, student photo, and Web and Computer Programming certificate courses." />
-    <meta property="og:image" content="https://i.pinimg.com/736x/04/45/2e/04452ee9b50e1db5ed174f1d260ca5d1.jpg" />
-    <meta property="og:url" content="https://divon-git.github.io/wdd231/" >
+    <meta property="og:title" content="Web homepage Wdd 231">
+    <meta property="og:description" content="Divine Kalu's WDD 231 course homepage, featuring an introduction, student photo, and Web and Computer Programming certificate courses.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/04/45/2e/04452ee9b50e1db5ed174f1d260ca5d1.jpg">
+    <meta property="og:url" content="https://divon-git.github.io/wdd231/">
+    <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
 
 
-    <link rel="icon" href="images/favicon.ico" type="ico">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -84,7 +85,7 @@
         <section class="panel certificate-panel" aria-labelledby="certificate-heading">
             <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
 
-            <div class="course-controls" aria-label="Filter courses">
+            <div class="course-controls" role="group" aria-label="Filter courses">
                 <button class="filter-button active" type="button" data-filter="ALL"
                     aria-pressed="true">All Courses</button>
                 <button class="filter-button" type="button" data-filter="WDD"
@@ -107,7 +108,7 @@
     </main>
 
     <footer class="site-footer">
-        <div class="social-links" aria-label="Social media links">
+        <nav class="social-links" aria-label="Social media links">
             <a href="https://github.com/Divon-git" target="_blank"
                 rel="noopener noreferrer" aria-label="GitHub">
                 <img src="images/github.svg" alt="" width="26" height="26">
@@ -116,7 +117,7 @@
                 target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="" width="26" height="26">
             </a>
-        </div>
+        </nav>
 
         <p class="copyright">
             © <span id="currentyear"></span> Divine Kalu · Nigeria
