@@ -1,0 +1,20 @@
+[
+    {
+        "name":"bongo",
+        "age": 70,
+        "active": true
+    },
+
+    {
+        "name": "mike",
+        "age": "25",
+        "active": false
+
+    },
+
+    {
+        "name": "puppy",
+        "age": "26",
+        "active": false
+    } 
+]

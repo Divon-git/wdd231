@@ -1,0 +1,22 @@
+[
+
+    {
+        "name":"mr fruit",
+        "age": 45,
+        "active": false
+    },
+
+    {
+        "name": "von",
+        "age": "25",
+        "active": true
+
+    },
+
+    {
+        "name": "josh",
+        "age": "26",
+        "active": true
+    }
+
+]
