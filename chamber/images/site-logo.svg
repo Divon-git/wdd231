@@ -1,0 +1,18 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130">
+  <rect x="8" y="10" width="108" height="108" rx="20" fill="#142B3C"></rect>
+
+  <path d="M30 83 V46 H43 V72 H57 V83Z" fill="#F3C45E"></path>
+  <path d="M53 83 V56 L66 43 L79 56 V83 H66 V62 L53 75Z" fill="#F3C45E"></path>
+  <path d="M83 43 H98 V56 H89 V73 H99 V86 H83 L76 78 V53Z" fill="#F3C45E"></path>
+
+  <path d="M26 96 H99" stroke="#FFFFFF" stroke-width="2" opacity=".6"></path>
+
+  <text x="132" y="62" font-family="Arial, sans-serif" font-size="39" font-weight="800" letter-spacing="1" fill="#142B3C">LEC</text>
+
+  <path d="M134 74 H380" stroke="#C99D43" stroke-width="2"></path>
+
+  <text x="134" y="94" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.4" fill="#142B3C">LAGOS ENTERPRISE</text>
+
+  <text x="134" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.4" fill="#142B3C">CHAMBER</text>
+</svg>

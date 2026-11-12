@@ -26,14 +26,14 @@ const displayProphets = (prophets) => {
         const name = `${prophet.name} ${prophet.lastname}`;
         const image = prophet.imageurl;
         const dateOfBirth = `Date of Birth: ${prophet.birthdate}`;
-        const birthPlace = `place of Birth ${prophet.birthplace}`;
+        const birthPlace = `place of Birth: ${prophet.birthplace}`;
         // card build code goes here
         const card = document.createElement("section");
         const fullName = document.createElement("h2");
         fullName.textContent = name;
         const portrait = document.createElement("img");
         const paragraph1 = document.createElement("p");
-        const paragraph2 = document.createElement("p");
+        // const paragraph2 = document.createElement("p");
 
         paragraph1.innerHTML = `${dateOfBirth} <br> ${birthPlace}`;
         

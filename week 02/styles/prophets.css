@@ -1,3 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     text-align: center;
+}
+
+h2 {
+    margin: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+section {
+    border: 1px solid rgb(155, 155, 235);
+    background-color: rgb(201, 215, 228);
+}
+
+section img {
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#cards {
+    display: grid;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 3fr));
+    margin: 1rem;
+    background-color: rgb(237, 239, 241);
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
 }

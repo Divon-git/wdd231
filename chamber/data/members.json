@@ -1,0 +1,90 @@
+
+{
+  "companies":[
+              {
+                "companyName": "Techforge Solutions",
+                "tagline": "Forging the future",
+                "address": "Yaba, Lagos State, Nigeria",
+                "phone": "+234 800 000 0001",
+                "email": "hello@techbridge.co",
+                "website": "https://techbridge.co",
+                "imageurl": "images/techforge.webp",
+                "membershipLevel": 3,
+                "category": "Software Development",
+                "description": "Builds web applications and custom software solutions for growing businesses."
+              },
+              {
+                "companyName": "Paymenow",
+                "tagline": "Pay with no excuses",
+                "address": "Victoria Island, Lagos State, Nigeria",
+                "phone": "+234 800 000 0002",
+                "email": "contact@paywave.co",
+                "website": "https://paywave.co",
+                "imageurl": "images/paymenow.webp",
+                "membershipLevel": 3,
+                "category": "Financial Technology",
+                "description": "Develops digital payment tools that help businesses manage transactions."
+              },
+              {
+                "companyName": "CreativeGrid Studios",
+                "tagline": "Passion At its Best",
+                "address": "Lekki, Lagos State, Nigeria",
+                "phone": "+234 800 000 0003",
+                "email": "studio@creativegrid.co",
+                "website": "https://creativegrid.co",
+                "imageurl": "images/creative.webp",
+                "membershipLevel": 2,
+                "category": "Creative Technology",
+                "description": "Provides digital branding, user-interface design, and creative services."
+              },
+              {
+                "companyName": "MarketNest NG",
+                "tagline": "Beyound Commerce",
+                "address": "Ikeja, Lagos State, Nigeria",
+                "phone": "+234 800 000 0004",
+                "email": "support@marketnest.co",
+                "website": "https://marketnest.co",
+                "imageurl": "images/market.webp",
+                "membershipLevel": 2,
+                "category": "E-commerce",
+                "description": "Creates online marketplace tools for small and medium-sized businesses."
+              },
+              {
+                "companyName": "CodeSpring Academy",
+                "tagline": "Empowering Your Future",
+                "address": "Surulere, Lagos State, Nigeria",
+                "phone": "+234 800 000 0005",
+                "email": "learn@codespring.co",
+                "website": "https://codespring.co",
+                "imageurl": "images/academy.webp",
+                "membershipLevel": 1,
+                "category": "Technology Education",
+                "description": "Offers practical programming and digital-skills training for beginners."
+              },
+              {
+                "companyName": "SwiftRoute Technologies",
+                "tagline": "Delivery You Can Trust",
+                "address": "Apapa, Lagos State, Nigeria",
+                "phone": "+234 800 000 0006",
+                "email": "info@swiftroute.co",
+                "website": "https://swiftroute.co",
+                "imageurl": "images/deliver.webp",
+                "membershipLevel": 1,
+                "category": "Logistics Technology",
+                "description": "Develops technology-enabled delivery, tracking, and logistics solutions."
+              },
+              {
+                "companyName": "NexaAI Labs",
+                "tagline": "Shapping The Future Of Ai",
+                "address": "Yaba, Lagos State, Nigeria",
+                "phone": "+234 800 000 0007",
+                "email": "team@nexaai.co",
+                "website": "https://nexaai.co",
+                "imageurl": "images/aicompany.webp",
+                "membershipLevel": 1,
+                "category": "Artificial Intelligence",
+                "description": "Builds AI-powered tools and workflow automation for emerging businesses."
+              }
+]
+
+}

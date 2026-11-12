@@ -1,0 +1,151 @@
+@media screen and (min-width: 700px){
+    .menu-button {
+        display: none;
+    }
+
+    .site-navigation {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .site-nav {
+        display: block;
+        background: none;
+    }
+
+    .site-nav a {
+        position: relative;
+        border-bottom: none;
+        border-radius: 10px;
+        top: 15px;
+        right: 50px;
+        padding: .1rem;
+        font-size: 1.2rem;
+        margin-top: 1.8rem;
+        color:  rgb(20, 44, 80);
+        
+        
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        /* background-color: blue; */
+    }
+
+    .site-nav a:hover {
+        border: 2px solid rgb(238, 192, 93);
+        transform: translateY(-4px);
+        transition: 0.5s ease;
+        scale: 1.1;
+    }
+
+    #cards {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         gap: 1rem;
+         margin: 5rem;
+        
+        
+    }
+
+    /* LIST VIEW */
+
+    #cards:has(.list) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+     .list {
+        width: 100%;
+        display: block;
+    }
+
+    .list-inner {
+        display: grid;
+        grid-template-columns: 1.3fr 1.3fr 1fr 1fr 1.2fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.2rem;
+        background-color: rgb(227, 231, 231);
+        border-bottom: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    
+
+    .list-inner img {
+        display: none;
+    }
+
+    /* Company name */
+
+    .list-inner h2 {
+        font-size: 0.95rem;
+        margin: 0;
+        padding: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* Tagline */
+
+    .list-inner span {
+        font-size: 0.85rem;
+        padding: 0;
+        border: none;
+        text-align: left;
+    }
+
+     /* Company contact information */
+
+    .list-inner p {
+        grid-column: auto;
+        font-size: 0.8rem;
+        line-height: 1.6;
+        margin: 0;
+        overflow-wrap: anywhere;
+    } 
+
+
+    /* footer section */
+
+    .site-footer {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.5fr;
+        align-items: center;
+        text-align: left;
+        padding: 3rem 5%;
+        gap: 2rem;
+    }
+
+    .footer-contact {
+        justify-self: start;
+    }
+
+    .socials {
+        justify-self: center;
+        gap: 1.5rem;
+    }
+
+    .footer-project {
+        justify-self: end;
+        text-align: right;
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0 0 0 1.5rem;
+        width: auto;
+    }
+
+    .footer-project p {
+        font-size: 0.85rem;
+    }
+
+
+
+
+  
+} 
