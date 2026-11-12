@@ -9,6 +9,7 @@
                 "email": "hello@techbridge.co",
                 "website": "https://techbridge.co",
                 "imageurl": "images/techforge.webp",
+                "level": "gold",
                 "membershipLevel": 3,
                 "category": "Software Development",
                 "description": "Builds web applications and custom software solutions for growing businesses."
@@ -21,6 +22,7 @@
                 "email": "contact@paywave.co",
                 "website": "https://paywave.co",
                 "imageurl": "images/paymenow.webp",
+                "level": "silva",
                 "membershipLevel": 3,
                 "category": "Financial Technology",
                 "description": "Develops digital payment tools that help businesses manage transactions."
@@ -33,6 +35,7 @@
                 "email": "studio@creativegrid.co",
                 "website": "https://creativegrid.co",
                 "imageurl": "images/creative.webp",
+                "level": "gold",
                 "membershipLevel": 2,
                 "category": "Creative Technology",
                 "description": "Provides digital branding, user-interface design, and creative services."
@@ -45,6 +48,7 @@
                 "email": "support@marketnest.co",
                 "website": "https://marketnest.co",
                 "imageurl": "images/market.webp",
+                "level": "Ruby",
                 "membershipLevel": 2,
                 "category": "E-commerce",
                 "description": "Creates online marketplace tools for small and medium-sized businesses."
@@ -57,6 +61,7 @@
                 "email": "learn@codespring.co",
                 "website": "https://codespring.co",
                 "imageurl": "images/academy.webp",
+                "level": "Ruby",
                 "membershipLevel": 1,
                 "category": "Technology Education",
                 "description": "Offers practical programming and digital-skills training for beginners."
@@ -69,6 +74,7 @@
                 "email": "info@swiftroute.co",
                 "website": "https://swiftroute.co",
                 "imageurl": "images/deliver.webp",
+                "level": "silva",
                 "membershipLevel": 1,
                 "category": "Logistics Technology",
                 "description": "Develops technology-enabled delivery, tracking, and logistics solutions."
@@ -81,6 +87,7 @@
                 "email": "team@nexaai.co",
                 "website": "https://nexaai.co",
                 "imageurl": "images/aicompany.webp",
+                "level": "gold",
                 "membershipLevel": 1,
                 "category": "Artificial Intelligence",
                 "description": "Builds AI-powered tools and workflow automation for emerging businesses."

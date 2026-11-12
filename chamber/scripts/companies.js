@@ -37,6 +37,7 @@ const displayData = (companies) => {
         const mail = company.email;
         const number = company.phone;
         const url = company.website;
+        const level = company.level
 
         const sections = document.createElement("section");
         const hTwo = document.createElement("h2");
@@ -63,6 +64,8 @@ const displayData = (companies) => {
             <strong>PHONE:</strong> ${number}
             <br>
             <strong>URL:</strong> <a href="${url}" target="_blank">${url}</a>
+            <br>
+            <strong>Level:</strong> ${level}
         `;
 
         containerDiv.appendChild(hTwo);
