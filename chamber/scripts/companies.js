@@ -43,72 +43,62 @@ const displayData = (companies) => {
         const hTwo = document.createElement("h2");
         const spanTag = document.createElement("span");
         const businessImage = document.createElement("img");
-        const info = document.createElement("p");
-        const containerDiv = document.createElement("div");
+        const info = document.createElement("div");
+        // const containerDiv = document.createElement("div");
 
         businessImage.setAttribute("src", image);
         businessImage.setAttribute("alt", `${businessName} logo`);
         businessImage.setAttribute("loading", "lazy");
         businessImage.setAttribute("width", "150");
         businessImage.setAttribute("height", "100");
-
-        containerDiv.classList.add("cardContainer");
-        sections.classList.add("sections");
+        info.setAttribute("class", "innerdivp")
 
         hTwo.textContent = businessName;
         spanTag.textContent = tag;
-
-        info.innerHTML = `
-            <strong>EMAIL:</strong> ${mail}
-            <br>
-            <strong>PHONE:</strong> ${number}
-            <br>
-            <strong>URL:</strong> <a href="${url}" target="_blank">${url}</a>
-            <br>
-            <strong>Level:</strong> ${level}
+        
+        const colorLevel = (color) => {
+            return  `
+        <p><strong>EMAIL:</strong> ${mail}</p>
+        <p><strong>PHONE:</strong> ${number}</p>
+        <p><strong>URL:</strong> <a href="${url}" target="_blank">${url}</a></p>
+        <p class="${color} level"><strong>Level:</strong> ${level}</p>
         `;
+        };
+        
+        if (level === "gold") {
+            info.innerHTML = colorLevel("gold");
+        } else if (level === "silva") {
+            info.innerHTML = colorLevel("silva");
+            
+        } else if (level === "Ruby") {
+            info.innerHTML = colorLevel("ruby");    
+        };
+        
 
-        containerDiv.appendChild(hTwo);
-        containerDiv.appendChild(spanTag);
-        containerDiv.appendChild(businessImage);
-        containerDiv.appendChild(info);
 
-        sections.appendChild(containerDiv);
+        
+
+        
+        sections.appendChild(hTwo);
+        sections.appendChild(spanTag);
+        sections.appendChild(businessImage);
+        sections.appendChild(info);
+        
+
         cardDiv.appendChild(sections);
 
     });
 };
 
+ const showList = () => {
+        cardDiv.classList.add("list");
+        cardDiv.classList.remove("grid");
+ };
 
-// LIST VIEW
-listButton.addEventListener("click", () => {
+ const showgrid = () => {
+        cardDiv.classList.add("grid");
+        cardDiv.classList.remove("list");
+ };
 
-    const sections = document.querySelectorAll(".sections");
-    const containers = document.querySelectorAll(".cardContainer");
-
-    sections.forEach(section => {
-        section.classList.add("list");
-    });
-
-    containers.forEach(container => {
-        container.classList.add("list-inner");
-    });
-
-});
-
-
-// GRID VIEW
-gridButton.addEventListener("click", () => {
-
-    const sections = document.querySelectorAll(".sections");
-    const containers = document.querySelectorAll(".cardContainer");
-
-    sections.forEach(section => {
-        section.classList.remove("list");
-    });
-
-    containers.forEach(container => {
-        container.classList.remove("list-inner");
-    });
-
-});
+ gridButton.addEventListener("click", showgrid);
+ listButton.addEventListener("click", showList);

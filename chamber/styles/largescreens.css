@@ -31,7 +31,6 @@
     ul {
         display: flex;
         gap: 2rem;
-        /* background-color: blue; */
     }
 
     .site-nav a:hover {
@@ -41,77 +40,7 @@
         scale: 1.1;
     }
 
-    #cards {
-         display: grid;
-         grid-template-columns: repeat(3, minmax(0, 1fr));
-         gap: 1rem;
-         margin: 5rem;
-        
-        
-    }
-
-    /* LIST VIEW */
-
-    #cards:has(.list) {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-     .list {
-        width: 100%;
-        display: block;
-    }
-
-    .list-inner {
-        display: grid;
-        grid-template-columns: 1.3fr 1.3fr 1fr 1fr 1.2fr;
-        align-items: center;
-        gap: 1rem;
-        padding: 1.2rem;
-        background-color: rgb(227, 231, 231);
-        border-bottom: 1px solid #ccc;
-        border-radius: 5px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
     
-
-    .list-inner img {
-        display: none;
-    }
-
-    /* Company name */
-
-    .list-inner h2 {
-        font-size: 0.95rem;
-        margin: 0;
-        padding: 0;
-        overflow-wrap: anywhere;
-    }
-
-    /* Tagline */
-
-    .list-inner span {
-        font-size: 0.85rem;
-        padding: 0;
-        border: none;
-        text-align: left;
-    }
-
-     /* Company contact information */
-
-    .list-inner p {
-        grid-column: auto;
-        font-size: 0.8rem;
-        line-height: 1.6;
-        margin: 0;
-        overflow-wrap: anywhere;
-    } 
-
-
-    /* footer section */
 
     .site-footer {
         display: grid;
