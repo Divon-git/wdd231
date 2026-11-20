@@ -1,0 +1,15 @@
+.card {
+    border: 1px solid rgb(25, 33, 51);
+    border-radius: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin: 1rem;
+}

@@ -1,4 +1,4 @@
-
+import getdate from "./date.js";
 const dataSource = "data/members.json";
 
 const cardDiv = document.getElementById("cards");
@@ -99,6 +99,13 @@ const displayData = (companies) => {
         cardDiv.classList.add("grid");
         cardDiv.classList.remove("list");
  };
+ 
+
+
 
  gridButton.addEventListener("click", showgrid);
  listButton.addEventListener("click", showList);
+
+
+getdate();
+

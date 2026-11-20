@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover technology companies, startups, and emerging businesses in Lagos, Nigeria. ">
+    <meta name="author" content="Divine Kalu">
+    <title>Home page Lagos Enterprise Chamber</title>
+    
+
+
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    
+    <link rel="icon" href="images/logo-icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/smallscreens.css">
+    <link rel="stylesheet" href="styles/largescreens.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    
+
+    <script src="scripts/navigation.js" defer></script>
+    <!-- <script type="module" src="scripts/companies.js"></script> -->
+    <!-- <script src="scripts/date.js" defer></script> -->
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/spotlight.js"></script>
+
+
+
+    <meta property="og:title" content="Lagos Enterprise Chamber (LEC)">
+    <meta property="og:description" content="Discover technology companies, startups, and emerging businesses in Lagos, Nigeria.">
+    <meta property="og:image" content="https://divon-git.github.io/wdd231/chamber/images/ogimage.webp">
+    <meta property="og:url" content="https://divon-git.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+    <header class="site-navigation">
+        <a href="index.html"> 
+        <img id="logoimage" src="images/site-logo.svg" alt="Lagos Enterprise Chamber website logo">
+        </a>
+        <!-- <span>Lagos Enterprise Chamber (LEC)</span> -->
+
+         <button class="menu-button" id="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+
+
+        <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" title="homepage" class="active" aria-current="page">Home</a></li>
+                <li><a href="directory.html" title="directory">Directory</a></li>
+                <li><a href="#" title="join">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section class="hero">
+
+            <picture class="heroImages">
+                <source srcset="images/large-hero.webp" media="(min-width: 1000px)">
+                <source srcset="images/medium-hero.webp" media="(min-width: 500px)">    
+                <img src="images/small-hero.webp" width="1024" height="680" alt="hero image, two business men shaking hands">
+            </picture>
+        <div class="content">    
+            <span class="pageName">LAGOS ENTERPRISE CHAMBER (LEC)</span>
+            <h1 class="headtext">Connecting Businesses. Creating Opportunities.</h1>
+            <p class="message">Discover a thriving business community where entrepreneurs connect, partnerships grow, and opportunities turn into success.</p>
+
+        </div>
+        
+        <a href="#" class="joinbutton">Join the Chamber</a>
+                
+           
+       </section>
+       <div class="mainContents">   
+           <h2 class="header">Our Upcoming Events</h2>
+                <div class="events">
+                    <section class="event seminar">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEXhnLY3gZS7Q/feedshare-shrink_1280/feedshare-shrink_1280/0/1695200681364?e=1796256000&v=beta&t=SpPtljOypoPlie7H3ZxZWEFKe79xfTHKz_9unEOD66M" alt="people sitted at an event">
+                        <h2>Entrepreneurship and Leadership Workshop</h2>
+                        <span class="typeseminar">seminar</span>
+                        <p class="date">December 18, 2026 · 11:00 AM – 3:00 PM</p>
+                        <p class="desc">A practical workshop designed to help emerging entrepreneurs develop leadership skills, business strategies, financial discipline, and sustainable business models.</p>
+                        <span class="venue">Venue: Lagos City Hall</span>
+
+                        <span class="name">J.K. Randle Road, Lagos Island, Lagos.</span>
+                    </section>
+
+                    <section class="event tech">
+                        <img src="https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1174406043%252F851065495143%252F1%252Foriginal.20260109-131616%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D1880%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.282%26fp-y%3D0.629%26s%3Dde997f8539efaa74540290fa2686cbcf&w=940&q=75" alt="people sitted at an event">
+                        <h2>Data Centre & Cloud Expo Africa</h2>
+                        <span class="typetech">Technology</span>
+                        <p class="date">January 15, 2027 · 10:00 AM – 1:00 PM</p>
+                        <p class="desc">Discover how businesses can leverage digital tools, artificial intelligence, e-commerce, and automation to improve productivity and compete in the modern economy.</p>
+                        <span class="venue">Venue: MUSON Centre</span>
+
+                        <span class="name">8/9 Marina Road, Onikan, Lagos Island, Lagos.</span>
+                    </section>
+
+                    </div>
+
+                    <div class="weather">
+                    <section class="weathersection">  
+                        <h2>Weather</h2>
+                        <p class="current">current temperature in Lagos, Nigeria is <span class="current-temperature"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <div class="weatherLevels">   
+                            <p>High:<span id="highs"></span></p>
+                            <p>Low:<span id="lows"></span></p>
+                            <p>Humidity:<span id="Humidity"></span></p>
+                            <p>Sunrise:<span id="Sunrise"></span></p>
+                            <p>Sunset:<span id="Sunset"></span></p>
+                        </div>
+                    </section>
+                    <section class="forcast">
+                        <h2>Forecast</h2>
+                        <!-- <span id="day1"></span>
+                        <span id="day2"></span>
+                        <span id="day3"></span> -->
+                    </section>
+                    </div>
+
+                    <h2 class="spotlit">Spotlight</h2>
+                    <div id="cards" class="grid">
+                    </div>
+
+        </div>
+
+       
+    </main>
+    
+<footer class="site-footer">
+
+    <div class="footer-contact">
+        <strong>Lagos Chamber of Commerce</strong>
+        <p>10 Victoria Island, Lagos</p>
+        <p>Lagos VI, Mail 100</p>
+        <p><a href="mailto:info@lagosenterp.ng">info@lagosenterp.ng</a></p>
+        <p><a href="tel:903466443">903 466 443</a></p>
+    </div>
+
+    <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="images/github.svg" alt="github logo" width="26" height="26">
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="linkedin logo" width="26" height="26">
+        </a>
+    </div>
+
+    <div class="footer-project">
+        <p>WDD231 Class Project</p>
+        <p>Divine Kalu</p>
+        <p>&copy; <span id="currentyear"></span> Lagos Enterprise Chamber of Commerce (LEC)</p>
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>
