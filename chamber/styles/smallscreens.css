@@ -413,12 +413,12 @@ a {
 }
 
 .message {
-    background-color: rgb(255, 239, 188);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px solid rgba(243, 243, 243, 0.5);
     padding: 1rem;
     border-radius: 20px;
     margin-top: 1rem;
-    border: 2px solid var(--secondary-color);
     box-shadow: 0 0 55px 4px rgba(0, 0, 0, 1.5);
 }
 
