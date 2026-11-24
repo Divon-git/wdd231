@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for applying to join the Lagos Enterprise Chamber.">
+    <meta name="author" content="Divine Kalu">
+    <title>Application Received | Lagos Enterprise Chamber</title>
+    
+
+
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    
+    <link rel="icon" href="images/logo-icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/smallscreens.css">
+    <link rel="stylesheet" href="styles/largescreens.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/thankyou.js"></script>
+    <!-- <script type="module" src="scripts/companies.js"></script> -->
+    <!-- <script type="module" src="scripts/date.js"></script> -->
+
+
+
+    <meta property="og:title" content="Lagos Enterprise Chamber (LEC)">
+    <meta property="og:description" content="Discover technology companies, startups, and emerging businesses in Lagos, Nigeria.">
+    <meta property="og:image" content="https://divon-git.github.io/wdd231/chamber/images/ogimage.webp">
+    <meta property="og:url" content="https://divon-git.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+    <header class="site-navigation">
+        <a href="index.html"> 
+        <img id="logoimage" src="images/site-logo.svg" alt="Lagos Enterprise Chamber website logo">
+        </a>
+        <!-- <span>Lagos Enterprise Chamber (LEC)</span> -->
+
+         <button class="menu-button" id="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+
+
+        <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" title="homepage">Home</a></li>
+                <li><a href="directory.html" title="directory" >Directory</a></li>
+                <li><a href="join.html" title="join" class="active" aria-current="page">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+
+        <section class="thankyou-card">
+
+            <h1>Thank You for Applying!</h1>
+
+            <p>
+                Your membership application has been successfully submitted.
+                We appreciate your interest in joining the Lagos Enterprise Chamber.
+            </p>
+
+            <h2>Application Details</h2>
+
+            <div class="submission-details">
+
+                <p>
+                    <strong>First Name:</strong>
+                    <span id="display-firstname"></span>
+                </p>
+
+                <p>
+                    <strong>Last Name:</strong>
+                    <span id="display-lastname"></span>
+                </p>
+
+                <p>
+                    <strong>Email Address:</strong>
+                    <span id="display-email"></span>
+                </p>
+
+                <p>
+                    <strong>Mobile Number:</strong>
+                    <span id="display-phone"></span>
+                </p>
+
+                <p>
+                    <strong>Business Name:</strong>
+                    <span id="display-organization"></span>
+                </p>
+
+                <p>
+                    <strong>Application Date:</strong>
+                    <span id="display-timestamp"></span>
+                </p>
+
+            </div>
+
+            <a href="index.html" class="joinbutton">
+                Return to Homepage
+            </a>
+
+        </section>
+
+    </main>
+
+    
+
+
+    
+<footer class="site-footer">
+
+    <div class="footer-contact">
+        <strong>Lagos Chamber of Commerce</strong>
+        <p>10 Victoria Island, Lagos</p>
+        <p>Lagos VI, Mail 100</p>
+        <p><a href="mailto:info@lagosenterp.ng">info@lagosenterp.ng</a></p>
+        <p><a href="tel:903466443">903 466 443</a></p>
+    </div>
+
+    <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="images/github.svg" alt="github logo" width="26" height="26">
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="linkedin logo" width="26" height="26">
+        </a>
+    </div>
+
+    <div class="footer-project">
+        <p>WDD231 Class Project</p>
+        <p>Divine Kalu</p>
+        <p>&copy; <span id="currentyear"></span> Lagos Enterprise Chamber of Commerce (LEC)</p>
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>

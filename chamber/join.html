@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover technology companies, startups, and emerging businesses in Lagos, Nigeria. ">
+    <meta name="author" content="Divine Kalu">
+    <title>Directory Lagos Chamber of Commerce</title>
+    
+
+
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    
+    <link rel="icon" href="images/logo-icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/smallscreens.css">
+    <link rel="stylesheet" href="styles/largescreens.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/join.js"></script>
+    <!-- <script type="module" src="scripts/companies.js"></script> -->
+    <!-- <script type="module" src="scripts/date.js"></script> -->
+
+
+
+    <meta property="og:title" content="Lagos Enterprise Chamber (LEC)">
+    <meta property="og:description" content="Discover technology companies, startups, and emerging businesses in Lagos, Nigeria.">
+    <meta property="og:image" content="https://divon-git.github.io/wdd231/chamber/images/ogimage.webp">
+    <meta property="og:url" content="https://divon-git.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+    <header class="site-navigation">
+        <a href="index.html"> 
+        <img id="logoimage" src="images/site-logo.svg" alt="Lagos Enterprise Chamber website logo">
+        </a>
+        <!-- <span>Lagos Enterprise Chamber (LEC)</span> -->
+
+         <button class="menu-button" id="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+
+
+        <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" title="homepage">Home</a></li>
+                <li><a href="directory.html" title="directory" >Directory</a></li>
+                <li><a href="join.html" title="join" class="active" aria-current="page">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+
+        <section class="join-intro">
+            <h1>Become a Member</h1>
+            <p>
+                Join the Lagos Enterprise Chamber and connect with
+                businesses, entrepreneurs, and industry leaders.
+                Choose a membership level and complete the application below.
+            </p>
+        </section>
+
+        <div class="membership-layout">
+
+            <section class="application-section">
+                <h2>Membership Application</h2>
+                <p>Fields marked as required must be completed.</p>
+
+                <form class="membership-form" method="get" action="thankyou.html">
+                    <label for="first-name">
+                        First Name *
+                        <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label for="last-name">
+                        Last Name *
+                        <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label for="organization-title">
+                        Organizational Title
+                        <input type="text" id="organization-title" name="organizationTitle" title="Your organizational title must contain at least seven letters, spaces, or hyphens" autocomplete="organization-title" pattern="(?=.*[A-Za-z])[A-Za-z -]{7,}">
+                    </label>
+
+                    <label for="email">
+                        Email Address *
+                        <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="exp@gmail.com" required>
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number *
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">
+                        Business / Organization Name *
+                        <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <fieldset class="membership-selection">
+                        <legend>Select Membership Level *</legend>
+
+                        <label for="np">
+                            <input type="radio" id="np" name="membership" value="np" required>
+                            NP Membership is Free
+                        </label>
+
+                        <label for="Ruby">
+                            <input type="radio" id="Ruby" name="membership" value="Ruby">
+                            Ruby Membership
+                        </label>
+
+                        <label for="silver">
+                            <input type="radio" id="silver" name="membership" value="silver">
+                            silver Membership
+                        </label>
+
+                        <label for="gold">
+                        <input type="radio" id="gold" name="membership" value="gold">
+                        Gold Membership
+                    </label>
+                    </fieldset>
+
+                    <label for="description">Business / Organization Description
+                    <textarea id="description" name="description" title="Describe your business or organization" rows="5"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Application" id="submit">
+
+
+                    
+                </form>
+            </section>
+
+           <section class="membership-levels">
+                <h2>Membership Benefits</h2>
+                <p>Explore the benefits of each membership level.</p>
+
+                <div class="level-cards">
+
+                    <article class="level-card np-card">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations.</p>
+                        <span>Free Membership</span>
+                        <a href="#np-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="level-card Ruby-card">
+                        <h3>Ruby Membership</h3>
+                        <p>Get started with business networking.</p>
+                        <span>Basic Business Benefits</span>
+                        <a href="#ruby-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="level-card silver-card">
+                        <h3>Silver Membership</h3>
+                        <p>Grow your business and visibility.</p>
+                        <span>Enhanced Business Benefits</span>
+                        <a href="#silver-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="level-card gold-card">
+                        <h3>Gold Membership</h3>
+                        <p>Enjoy premium business opportunities.</p>
+                        <span>Premium Business Benefits</span>
+                        <a href="#gold-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                </div>
+        </section> 
+        </div>
+
+        <dialog id="np-modal">
+        <div class="modal-content">
+            <button class="close-modal" type="button" aria-label="Close dialog">&times;</button>
+            <h2>NP Membership Benefits</h2>
+            <p>Designed for non-profit organizations.</p>
+            <ul>
+                <li>Free chamber membership.</li>
+                <li>Access to community networking events.</li>
+                <li>Non-profit organization directory listing.</li>
+                <li>Access to selected chamber resources.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="ruby-modal">
+        <div class="modal-content">
+            <button class="close-modal" type="button" aria-label="Close dialog">&times;</button>
+            <h2>Ruby Membership Benefits</h2>
+            <p>For businesses looking to establish connections.</p>
+            <ul>
+                <li>All NP membership benefits.</li>
+                <li>Business directory listing.</li>
+                <li>Access to selected business networking events.</li>
+                <li>Discounted admission to selected workshops.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="silver-modal">
+        <div class="modal-content">
+            <button class="close-modal" type="button" aria-label="Close dialog">&times;</button>
+            <h2>Silver Membership Benefits</h2>
+            <p>For growing businesses seeking greater exposure.</p>
+            <ul>
+                <li>All Bronze membership benefits.</li>
+                <li>Priority business directory listing.</li>
+                <li>Discounts on chamber events.</li>
+                <li>Access to exclusive training sessions.</li>
+                <li>Business advertising opportunities.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="gold-modal">
+        <div class="modal-content">
+            <button class="close-modal" type="button" aria-label="Close dialog">&times;</button>
+            <h2>Gold Membership Benefits</h2>
+            <p>Our highest membership level for established businesses.</p>
+            <ul>
+                <li>All Silver membership benefits.</li>
+                <li>Premium business spotlight on the homepage.</li>
+                <li>Priority invitations to exclusive events.</li>
+                <li>Free access to selected training sessions.</li>
+                <li>Premium advertising opportunities.</li>
+                <li>Priority access to chamber networking opportunities.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    </main>
+
+    
+
+
+    
+<footer class="site-footer">
+
+    <div class="footer-contact">
+        <strong>Lagos Chamber of Commerce</strong>
+        <p>10 Victoria Island, Lagos</p>
+        <p>Lagos VI, Mail 100</p>
+        <p><a href="mailto:info@lagosenterp.ng">info@lagosenterp.ng</a></p>
+        <p><a href="tel:903466443">903 466 443</a></p>
+    </div>
+
+    <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="images/github.svg" alt="github logo" width="26" height="26">
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="linkedin logo" width="26" height="26">
+        </a>
+    </div>
+
+    <div class="footer-project">
+        <p>WDD231 Class Project</p>
+        <p>Divine Kalu</p>
+        <p>&copy; <span id="currentyear"></span> Lagos Enterprise Chamber of Commerce (LEC)</p>
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>

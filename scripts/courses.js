@@ -1,9 +1,4 @@
-/*
- * Course list for the Web and Computer Programming certificate.
- * Confirm the course titles/credits against the official course-list file
- * supplied in your WDD 231 assignment. Change completed to true only for
- * courses you have personally completed.
- */
+
 const courses = [
     {
         subject: "CSE",
@@ -52,6 +47,9 @@ const courses = [
 const courseList = document.querySelector("#course-list");
 const creditSummary = document.querySelector("#credit-summary");
 const filterButtons = document.querySelectorAll(".filter-button");
+const cse110card = document.querySelector(".CSE110Open");
+const csedia = document.querySelector("#cse110");
+const cse110Closed = document.querySelector(".cse110closed");
 
 function displayCourses(courseArray) {
     courseList.innerHTML = "";
@@ -125,6 +123,16 @@ filterButtons.forEach((button) => {
         filterCourses(button.dataset.filter);
     });
 });
+
+cse110card.addEventListener("click", () => {
+    csedia.showModal();
+});
+
+cse110Closed.addEventListener("click", () => {
+    csedia.close();
+})
+
+
 
 // Show all courses when the page first loads.
 displayCourses(courses);

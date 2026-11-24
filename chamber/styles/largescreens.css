@@ -95,11 +95,26 @@
         font-size: 1.3rem;
     }
 
-    .joinbutton {
-        position: relative;
-        justify-self: start;
-        margin-left: 2rem;
-        bottom: 90px;
+
+
+
+     .membership-layout {
+        grid-template-columns: 1.3fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .membership-levels {
+        position: sticky;
+        top: 1rem;
+    }
+
+    .level-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-content ul {
+        display: block;
     }
 
 
